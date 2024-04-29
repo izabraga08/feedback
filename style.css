@@ -19,9 +19,8 @@
 
  body {
      background-color: var(--very-dark-blue);
-    height: 100vh;
-
-     display: flex;
+     height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
  }
@@ -43,36 +42,35 @@
 }
 
 .estrela{
-    background-color: var(--very-dark-blue);
+    background-color: var(--dark-blue);
     width: 48px; 
     height: 48px;
 
     display: flex;
     justify-content:center ;
-    align-items: cnter;
-
-    border-radius: 50%;
-
+    align-items: center;
     margin-bottom: 30px;
+    border-radius: 50%;
 }
 
 .card h1 {
     color: var(--white);
     font-size: 28px;
-    margin-bottom: 15PX;
+    margin-bottom: 15px;
 }
 
 
 .card p {
     color: var(--light-grey);
-    font-size: 15PX;
-    line-height: 24PX;
+    font-size: 15px;
+    line-height: 24px;
     margin-bottom: 24px;
 }
 
 .botoes {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
 
 .botoes button {
@@ -82,12 +80,43 @@
     font-weight: 700;
     line-height: 24px;
     border-radius:50%;
-    border:none
+    border:none;
     color: var(--medium-grey);
-    background-color: var(--dark-blue);
+    background-color:var(--dark-blue);
+
+    transition:all ease-in-out 0.3s;
 }
 
 .botoes button:hover {
-    
+     color: var(--white);
+     background-color: var(--orange);
+     cursor: pointer;
 
+}
+
+.botoes button:focus{
+ color: var(--white);   
+ background-color: var(--light-grey);
+}
+
+.card > button {
+   width:100%;
+   padding: 13px;
+   background-color: var(--orange);
+   border: none;
+   border-radius:22px;
+
+   font-size: 15px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   color: var(--white);
+
+   transition:all ease-in-out 0.3s ;
+}
+
+.card > button:hover {
+   color: var(--orange);
+   background-color: var(--white);
+   cursor: pointer; 
 }
